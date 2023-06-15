@@ -8,7 +8,7 @@ header {
 
   nav {
     padding: 30px 20% 0;
-    margin-bottom: 10%;
+    margin-bottom: 12%;
     position: relative;
     ul {
       display: flex;
@@ -31,16 +31,18 @@ header {
   }
 
   .titre {
-    width: 650px;
+    width: 800px;
     margin: 0 auto;
 
-    h3 {
-      font-size: 4rem;
-      margin-bottom: -20px;
+    :first-child{
+      font-size: 4em;
+      margin-bottom: 10px;
+      letter-spacing: 0.2rem;
     }
 
-    h1 {
+    :last-child {
       font-size: 4rem;
+      letter-spacing: 0.6rem;
     }
   }
 

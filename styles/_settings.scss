@@ -3,6 +3,7 @@ $color4:rgb(206, 172, 59);
 $color2: black;
 $color3: rgb(235, 235, 235);
 $color5:rgba(0, 0, 0, 0.849);
+$White : white;
 
 @font-face {
   font-family: "Allura";
@@ -38,14 +39,18 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     :first-child {
       font-family:"Allura";
-      color: $color4;
+      color: $color1;
+      font-size: 2.7rem;
+      height: 45px;
     }
-    :last-child {
+    :nth-child(2) {
       font-family:"Roboto";
       font-weight: 800;
-      letter-spacing: 0.6rem;
+      letter-spacing: 0rem;
+      font-size: 1.6rem;
     }
   }
 }

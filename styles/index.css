@@ -38,12 +38,15 @@ body .titre {
 }
 body .titre :first-child {
   font-family: "Allura";
-  color: rgb(206, 172, 59);
+  color: #7c5f00;
+  font-size: 2.7rem;
+  height: 45px;
 }
-body .titre :last-child {
+body .titre :nth-child(2) {
   font-family: "Roboto";
   font-weight: 800;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0rem;
+  font-size: 1.6rem;
 }
 
 header {
@@ -55,7 +58,7 @@ header {
 }
 header nav {
   padding: 30px 20% 0;
-  margin-bottom: 10%;
+  margin-bottom: 12%;
   position: relative;
 }
 header nav ul {
@@ -80,15 +83,17 @@ header nav::before {
   left: 10%;
 }
 header .titre {
-  width: 650px;
+  width: 800px;
   margin: 0 auto;
 }
-header .titre h3 {
-  font-size: 4rem;
-  margin-bottom: -20px;
+header .titre :first-child {
+  font-size: 4em;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
 }
-header .titre h1 {
+header .titre :last-child {
   font-size: 4rem;
+  letter-spacing: 0.6rem;
 }
 header .logo {
   width: 40px;
@@ -124,8 +129,7 @@ header p {
   margin: 20px;
 }
 .grid1 .grid1Left .cadre .titre {
-  margin: 5% 0 5%;
-  font-size: 1.5rem;
+  margin: 5% 0 7%;
 }
 .grid1 .grid1Left .cadre .logo {
   margin-bottom: 20px;
@@ -140,4 +144,130 @@ header p {
 }
 .grid1 .grid1Left .cadre h5 {
   margin-bottom: 30px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 80px 0;
+  position: relative;
+  height: 1100px;
+}
+section .titre {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+section .logo {
+  margin-bottom: 30px;
+}
+section ul {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  margin-bottom: 40px;
+}
+section ul li {
+  position: relative;
+}
+section ul li::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section .grid2 {
+  display: grid;
+  font-family: "Roboto";
+  grid-template-columns: 50% 50%;
+  background: rgb(235, 235, 235);
+  width: 60%;
+  -webkit-box-shadow: 0 -6px 0 #7c5f00;
+          box-shadow: 0 -6px 0 #7c5f00;
+  height: 700px;
+  color: black;
+  padding: 20px 0;
+}
+section .grid2 .grid2Left, section .grid2 .grid2Right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section .grid2 .grid2Left .block, section .grid2 .grid2Right .block {
+  display: grid;
+  grid-template-columns: 25% 55% 20%;
+  width: 90%;
+  position: relative;
+}
+section .grid2 .grid2Left .block img, section .grid2 .grid2Right .block img {
+  border-radius: 150px;
+}
+section .grid2 .grid2Left .block .text, section .grid2 .grid2Right .block .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section .grid2 .grid2Left .block .text :first-child, section .grid2 .grid2Right .block .text :first-child {
+  font-weight: bold;
+}
+section .grid2 .grid2Left .block :nth-child(3), section .grid2 .grid2Right .block :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7c5f00;
+  font-weight: bold;
+}
+section .grid2 .grid2Left .block::after, section .grid2 .grid2Right .block::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: rgb(206, 172, 59);
+  position: absolute;
+  bottom: -40px;
+}
+section .img {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
