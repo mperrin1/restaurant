@@ -1,0 +1,57 @@
+header {
+  font-family: "Poppins";
+  color: $color3;
+  background: url(../../assets/img/bg-slider-06.jpg) center/cover;
+  min-height: 90vh;
+  display: block;
+
+
+  nav {
+    padding: 30px 20% 0;
+    margin-bottom: 10%;
+    position: relative;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      color: $color3;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    &::before {
+      content: "Resto";
+      color: $color3;
+      font-size: 2.2rem;
+      font-weight: bold;
+      font-family: "Allura";
+      position: absolute;
+      top: 15px;
+      left: 10%;
+    }
+  }
+
+  .titre {
+    width: 650px;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 4rem;
+      margin-bottom: -20px;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .logo {
+    width: 40px;
+    margin: 40px auto 20px auto;
+  }
+
+  p {
+    width: 650px;
+    letter-spacing: 0.6rem;
+    margin: 0 auto;
+  }
+}

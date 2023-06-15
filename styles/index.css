@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Allura";
+  src: url(../assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-Thin.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  resize: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.849);
+  font-family: "Poppins";
+}
+body .titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .titre :first-child {
+  font-family: "Allura";
+  color: rgb(206, 172, 59);
+}
+body .titre :last-child {
+  font-family: "Roboto";
+  font-weight: 800;
+  letter-spacing: 0.6rem;
+}
+
+header {
+  font-family: "Poppins";
+  color: rgb(235, 235, 235);
+  background: url(../../assets/img/bg-slider-06.jpg) center/cover;
+  min-height: 90vh;
+  display: block;
+}
+header nav {
+  padding: 30px 20% 0;
+  margin-bottom: 10%;
+  position: relative;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgb(235, 235, 235);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+header nav::before {
+  content: "Resto";
+  color: rgb(235, 235, 235);
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "Allura";
+  position: absolute;
+  top: 15px;
+  left: 10%;
+}
+header .titre {
+  width: 650px;
+  margin: 0 auto;
+}
+header .titre h3 {
+  font-size: 4rem;
+  margin-bottom: -20px;
+}
+header .titre h1 {
+  font-size: 4rem;
+}
+header .logo {
+  width: 40px;
+  margin: 40px auto 20px auto;
+}
+header p {
+  width: 650px;
+  letter-spacing: 0.6rem;
+  margin: 0 auto;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-height: 620px;
+  overflow: hidden;
+}
+.grid1 .grid1Left {
+  background-color: rgb(235, 235, 235);
+}
+.grid1 .grid1Left .cadre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px dashed rgb(206, 172, 59);
+  margin: 20px;
+}
+.grid1 .grid1Left .cadre .titre {
+  margin: 5% 0 5%;
+  font-size: 1.5rem;
+}
+.grid1 .grid1Left .cadre .logo {
+  margin-bottom: 20px;
+}
+.grid1 .grid1Left .cadre p {
+  text-align: center;
+  width: 90%;
+  margin-bottom: 40px;
+}
+.grid1 .grid1Left .cadre img {
+  border-radius: 150px;
+}
+.grid1 .grid1Left .cadre h5 {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=index.css.map */

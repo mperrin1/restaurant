@@ -1,0 +1,51 @@
+$color1:#7c5f00 ;
+$color4:rgb(206, 172, 59);
+$color2: black;
+$color3: rgb(235, 235, 235);
+$color5:rgba(0, 0, 0, 0.849);
+
+@font-face {
+  font-family: "Allura";
+  src: url(../assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../assets/fonts/Poppins-Thin.ttf);
+}
+
+@mixin flexboxCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  resize: none;
+  list-style: none;
+}
+
+body {
+  background-color: $color5;
+  font-family: "Poppins";
+  .titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    :first-child {
+      font-family:"Allura";
+      color: $color4;
+    }
+    :last-child {
+      font-family:"Roboto";
+      font-weight: 800;
+      letter-spacing: 0.6rem;
+    }
+  }
+}
