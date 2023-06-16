@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.849);
+  background-color: rgb(41, 41, 41);
   font-family: "Poppins";
 }
 body .titre {
@@ -381,16 +381,14 @@ section .img {
   scale: 1.3;
   margin-bottom: 4%;
 }
-.grid3 .grid3Right form .secondLine div, .grid3 .grid3Right form .secondLine input,
-.grid3 .grid3Right form .firstLine div,
-.grid3 .grid3Right form .firstLine input {
-  margin: 10px 3%;
+.grid3 .grid3Right form .secondLine div,
+.grid3 .grid3Right form .firstLine div {
+  margin: 10px 5%;
   position: relative;
   overflow: visible;
 }
-.grid3 .grid3Right form .secondLine div::after, .grid3 .grid3Right form .secondLine input::after,
-.grid3 .grid3Right form .firstLine div::after,
-.grid3 .grid3Right form .firstLine input::after {
+.grid3 .grid3Right form .secondLine div::after,
+.grid3 .grid3Right form .firstLine div::after {
   content: "";
   height: 2px;
   width: 100%;
@@ -407,6 +405,17 @@ section .img {
   font-family: "Roboto";
   background: none;
   border: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.grid3 .grid3Right form .secondLine select:focus, .grid3 .grid3Right form .secondLine textarea:focus, .grid3 .grid3Right form .secondLine input:focus,
+.grid3 .grid3Right form .firstLine select:focus,
+.grid3 .grid3Right form .firstLine textarea:focus,
+.grid3 .grid3Right form .firstLine input:focus {
+  scale: 1.2;
+  -webkit-transform: translateX(7%);
+          transform: translateX(7%);
 }
 .grid3 .grid3Right form .secondLine textarea,
 .grid3 .grid3Right form .firstLine textarea {
@@ -422,4 +431,181 @@ section .img {
   border: none;
   border-radius: 150px;
   padding: 18px 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.grid3 .grid3Right #valider:hover {
+  scale: 1.2;
+}
+
+.grid4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.grid4 .titre {
+  margin-top: 7%;
+}
+.grid4 .titre :first-child {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.grid4 .titre :last-child {
+  color: white;
+  font-size: 2.5rem;
+}
+.grid4 .logo {
+  margin: 3% auto;
+}
+.grid4 .tableau {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 60%;
+  height: 400px;
+}
+.grid4 .tableau .grid4Left {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin-right: 2;
+}
+.grid4 .tableau .grid4Left .block1, .grid4 .tableau .grid4Left .block2 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 10px;
+}
+.grid4 .tableau .grid4Left .block1 .partRight, .grid4 .tableau .grid4Left .block2 .partRight {
+  background: rgb(235, 235, 235);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 4%;
+}
+.grid4 .tableau .grid4Left .block1 .date, .grid4 .tableau .grid4Left .block2 .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  height: 40%;
+  background: rgb(41, 41, 41);
+  color: white;
+}
+.grid4 .tableau .grid4Left .block1 .partLeft {
+  background: url(../../assets/img/event-01.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.grid4 .tableau .grid4Left .block2 .partLeft {
+  background: url(../../assets/img/event-02.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.grid4 .tableau .grid4Right {
+  background: url(../../assets/img/event-03.jpg) center/cover;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.grid4 .tableau .grid4Right .cadre {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.grid4 .tableau .grid4Right .cadre .date {
+  background: rgb(41, 41, 41);
+  color: white;
+  width: 22%;
+  height: 21%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10%;
+}
+.grid4 .tableau .grid4Right .cadre h4 {
+  width: 70%;
+  margin-bottom: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.grid4 .tableau .grid4Right .cadre h5 {
+  margin-top: 25%;
 }/*# sourceMappingURL=index.css.map */

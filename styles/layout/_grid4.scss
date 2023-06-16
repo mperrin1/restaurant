@@ -1,0 +1,123 @@
+.grid4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .titre {
+    margin-top: 7%;
+    :first-child {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    :last-child {
+      color: $White;
+      font-size: 2.5rem;
+    }
+  }
+
+  .logo {
+    margin: 3% auto;
+  }
+
+  .tableau {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 60%;
+    height: 400px;
+
+    .grid4Left {
+      display: grid;
+      grid-template-rows: 50% 50%;
+      margin-right: 2;
+
+      .block1, .block2 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 10px;
+
+        .partRight {
+          background: $color3;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-left: 4%;
+        }
+
+        .date {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          width: 35%;
+          height: 40%;
+          background: $color5;
+          color: $White;
+        }
+      }
+
+      .block1 {
+        .partLeft{
+          background: url(../../assets/img/event-01.jpg) center/cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      
+      .block2 {
+        .partLeft{
+          background: url(../../assets/img/event-02.jpg) center/cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      
+    }
+
+    .grid4Right {
+      background: url(../../assets/img/event-03.jpg) center/cover;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .cadre {
+        background-color: $White;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .date {
+          background: $color5;
+          color: $White;
+          width: 22%;
+          height: 21%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 10%;
+        }
+
+        h4 {
+          width: 70%;
+          margin-bottom: 6%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        h5 {
+          margin-top: 25%;
+        }
+      }
+    }
+  }
+}
