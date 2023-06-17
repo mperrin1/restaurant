@@ -1,0 +1,47 @@
+footer {
+    background: url(../../assets/img/bg-footer.jpg) center/cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 340px;
+    color: $White;
+
+    .footerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 30%;
+        margin-right: 30px;
+
+        h3 {
+            font-family: "Allura";
+            font-size: 3rem;
+            color: $color1;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 2rem;
+        }
+    }
+
+    .footerRight {
+        display: flex;
+        flex-direction: column;
+        margin: 10% 0 10% 8%;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    textarea {
+        font-family: "Roboto";
+        color: $White;
+        background: transparent;
+        width: 40%;
+        height: 40px;
+        margin: 2% 0 8% 1%;
+        border-radius: 5px;
+        font-size: 1.3rem;
+    }
+}
